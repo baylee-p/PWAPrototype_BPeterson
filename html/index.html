@@ -11,25 +11,33 @@
     <header>
         <!-- Nav bar for bigger screens -->
         <nav class="z-depth-0 orange lighten-4">
-            <a href="/" class="brand-logo orange-text text-darken-2" aria-label="Task Manager Home">
+            <div class="nav-wrapper container">
+            <a href="/" data-target="mobile-menu" class="brand-logo orange-text text-darken-2" aria-label="Task Manager Home">
                 Task Manager
             </a>
             <!-- Hamburger menu for medium and small screens -->
-            <a href="#" class="sidemap-trigger right hide-on-med-and-up black-text">
+            <a href="#" class="sidenav-trigger right hide-on-med-and-up black-text">
                 <i class="material-icons">menu</i>
             </a>
             <!-- Navbar links for large screens -->
             <ul class="right hide-on-small-and-down">
                 <li>
-                    <a href="/" class="waves-effect grey-text text-darken-4">Home</a>
+                    <a href="/" class="waves-effect grey-text text-darken-4">
+                        Home
+                    </a>
                 </li>
                 <li>
-                    <a href="/pages/about.html" class="waves-effect grey-text text-darken-4">About</a>
+                    <a href="/pages/about.html" class="waves-effect grey-text text-darken-4">
+                        About
+                    </a>
                 </li>
                 <li>
-                    <a href="/pages/contact.html" class="waves-effect grey-text text-darken-4">Contact</a>
+                    <a href="/pages/contact.html" class="waves-effect grey-text text-darken-4">
+                        Contact
+                    </a>
                 </li>
             </ul>
+            </div>
         </nav>
     </header>
 
@@ -54,5 +62,71 @@
             </li>
         </ul>
     </aside>
+
+    <main>
+        <!-- Task 1 -->
+         <div class="tasks container grey-text text-darken-4">
+            <div class="card-panel white row valign-wrapper">
+                <div class="col s2">
+                    <img src="/img/task.png" class="circle responsive-img" alt="Task Icon">
+                </div>
+                <div class="task-details col s8">
+                    <h5 class="task-title black-text">Gardening</h5>
+                    <div class="task-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, ipsam. Tempore necessitatibus officiis ad, quos fuga placeat eos repudiandae illum? Nemo nostrum temporibus veritatis soluta et sint repellat, accusantium id.
+                    </div>
+                </div>
+                <div class="col s2 right-align">
+                    <button class="task-delete btn-flat" aria-label="Delete Task">
+                        <i class="material-icons black-text-darken-1">delete_outline</i>
+                    </button>
+                </div>
+            </div>
+        <!-- Task 2 -->
+         </div>
+         <div class="tasks container grey-text text-darken-4">
+            <div class="card-panel white row valign-wrapper">
+                <div class="col s2">
+                    <img src="/img/task.png" class="circle responsive-img" alt="Task Icon">
+                </div>
+                <div class="task-details col s8">
+                    <h5 class="task-title black-text">Office Work</h5>
+                    <div class="task-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, ipsam. Tempore necessitatibus officiis ad, quos fuga placeat eos repudiandae illum? Nemo nostrum temporibus veritatis soluta et sint repellat, accusantium id.
+                    </div>
+                </div>
+                <div class="col s2 right-align">
+                    <button class="task-delete btn-flat" aria-label="Delete Task">
+                        <i class="material-icons black-text-darken-1">delete_outline</i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="center">
+                <button class="btn-floating btn-large orange darken-2 sidenav-trigger">
+                    <i class="material-icons">add</i>
+                </button>
+            </div>
+            <div class="sidenav side-form" id="side-form">
+                <form class="add-task container section">
+                    <h6>Add New Task</h6>
+                    <div class="divider"></div>
+                    <div class="input-field">
+                        <label for="title" class="black-text">Task Title</label>
+                        <input type="text" placeholder="Enter Task Title" id="title" class="validate">
+                    </div>
+                    <div class="input-field">
+                        <label for="description" class="black-text">Task Description</label>
+                        <input type="text" placeholder="Enter Task Description" id="description" class="validate">
+                    </div>
+                    <div class="input-field center">
+                        <button type="button" class="btm-small orange darken-2">
+                            Add
+                        </button>
+                    </div>
+                </form>
+            </div>
+         </div>
+    </main>
+    <script src="/js/materialize.min.js"></script>
+    <script src="js/ui.js"></script>
 </body>
 </html>
